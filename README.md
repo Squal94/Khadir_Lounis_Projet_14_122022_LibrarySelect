@@ -8,15 +8,11 @@ After creation, your project should look like this:
 
 ```
 my-app/
-
     dist/
-    index.js
-
+        index.js
     node_modules/
-
     src/
-        index.jsx
-
+       index.jsx
     README.md
     package.json
     webpack.config.js
@@ -34,6 +30,68 @@ npm install @squal94/librairyselectprojet14
 
 ```
 
+## Adding a Props
+
+For props I used prop-types.
+
+```
+import PropTypes from "prop-types";
+
+```
+
+```
+function SelectItem({ arrayProps, selectImg, selectClass })
+
+```
+
+```
+SelectItem.propTypes = {
+  arrayProps: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      abbreviation: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+  selectImg: PropTypes.string.isRequired,
+  selectClass: PropTypes.string.isRequired,
+};
+
+```
+
+#### arrayProps
+
+For arrayProps the component waits for an array of objects it consists of a key name and another key abbreviation, why abbreviation because it can be used as enter or an id or keys
+
+```
+ {
+    name: "Sales",
+    abbreviation: "SA",
+  },
+
+```
+
+#### selectImg
+
+selectImg the component waits string like :
+
+```
+./../Assets/img/angle-arrow-down.png
+
+```
+
+so you can swap the component icon
+
+#### selectClass
+
+selectClass the component waits string like :
+
+```
+"departement"
+
+```
+
+it is used to provide unique classnames to tags no matter how many times you use the component.
+
 ## Adding a Stylesheet
 
 This project uses [Webpack] (https:/webpack.githubio/) to manage all assets. Webpack offers a personalized way to “extend” the concept of “import” beyond Javascript. To express that a JavaScript file depends on a CSS file, you must **import the CSS or SCSS from the reaction **:
@@ -42,7 +100,7 @@ For our custom component I decided not to create an integrated style, but rather
 
 To do this I join class react to use:
 
-### `Scss a use BEM style`
+### `Scss i use BEM style`
 
 selectClass was defined in props entrie
 
@@ -67,4 +125,11 @@ selectClass was defined in props entrie
           </li>
       </ul>
     </div>
+
 ```
+
+## Npm run build
+
+Npm run build was succes !!!
+
+![](./src/BuildLib.png)
