@@ -133,3 +133,30 @@ selectClass was defined in props entrie
 Npm run build was succes !!!
 
 ![](./src/BuildLib.png)
+
+## Deployment
+
+After install dependency import with :
+
+```
+import { SelectItem } from "@squal94/librairyselectprojet14";
+
+```
+
+And use it in component like this:
+
+```
+  <div className="home__form__state">
+    <label className="selectLabel">State</label>
+        <SelectItem
+        arrayProps={states}
+        selectImg={arrowImg}
+        selectClass="state"
+        />
+  </div>
+
+```
+
+## Something Missing?
+
+If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/Squal94/Khadir_Lounis_Projet_14_122022_LibrarySelect/issues) or [contribute some!](https://github.com/Squal94/Khadir_Lounis_Projet_14_122022_LibrarySelect#readme)
