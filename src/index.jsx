@@ -94,7 +94,7 @@ function SelectItem({ arrayProps, selectImg, selectClass }) {
 }
 
 /**
- * PropTypes are used to define the expected value of props and to configure and secure the component.
+ * PropTypes are used to define the expected values and types of props and to configure and secure the component.
  */
 
 SelectItem.propTypes = {
