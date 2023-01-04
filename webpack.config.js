@@ -1,7 +1,9 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const nodeExternals = require("webpack-node-externals");
-
+/**
+ * module.exports are used to define the expected components and props and to configure and secure the component and indicates the paths to be used .
+ */
 module.exports = {
   entry: path.resolve(__dirname, "./src/index.jsx"),
   output: {
